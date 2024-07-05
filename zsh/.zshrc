@@ -133,4 +133,16 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH="/Users/adityarameshganti/flutter-sdk/flutter/bin:$PATH"
-alias la="eza -la --icons"
+alias la="eza -la --icons=always --color=always"
+alias ls="eza --color=always --long --no-filesize --icons=always --no-time"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+export MSYS_NO_PATHCONV=1
+export MODUS_AZURE_SUBSCRIPTION_ID="fed1a76a-0704-469f-b8c5-0e6bfb045564"
+
+alias cd="z"
+
+eval "$(zoxide init zsh)"
+
+alias cat="bat"

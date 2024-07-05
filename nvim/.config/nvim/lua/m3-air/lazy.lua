@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("m3-air.plugins", {
+require("lazy").setup({ { import = "m3-air.plugins" }, { import = "m3-air.plugins.lsp" } }, {
     checker = {
         enabled = true,
         notify = false,

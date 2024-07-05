@@ -41,7 +41,7 @@ return {
                 "vim",
                 "dockerfile",
                 "gitignore",
-                "qery",
+                "query",
                 "vimdoc",
                 "c",
                 "cmake",
